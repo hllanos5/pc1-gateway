@@ -1,0 +1,5 @@
+spring.application.name=api-gateway
+
+spring.cloud.gateway.routes[0].id=bff
+spring.cloud.gateway.routes[0].uri=http://bff-bank:9090
+spring.cloud.gateway.routes[0].predicates[0]=Path=/client/**
